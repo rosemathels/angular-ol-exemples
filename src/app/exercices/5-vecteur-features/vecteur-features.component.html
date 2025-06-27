@@ -1,0 +1,8 @@
+<div class="side">
+  <p>OpenLayers - Hello World</p>
+  <button (click)="addFeature()">Ajouter feature</button>
+  <button (click)="removeLastFeature()">Supprimer dernière feature créée</button>
+  <button (click)="clearFeatures()">Tout supprimer</button>
+  <button (click)="zoomToExtent()">Zoomer sur l'étendue de la couche</button>
+</div>
+<app-map class="map" [map]="map"></app-map>

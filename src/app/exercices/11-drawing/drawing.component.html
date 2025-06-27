@@ -1,0 +1,9 @@
+<div class="side">
+  <p>OpenLayers - Hello World</p>
+  @if (drawing) {
+    <button (click)="stopDrawing()">Désactiver le dessin</button>
+  } @else {
+    <button (click)="startDrawing()">Activer le dessin</button>
+  }
+</div>
+<app-map class="map" [map]="map"></app-map>

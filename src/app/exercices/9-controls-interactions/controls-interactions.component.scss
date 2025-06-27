@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  height: 100%
+}
+
+.side {
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.map {
+  height: 100%;
+  width: 70%;
+}
+
+#id-mouse-position {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::ng-deep .ol-mouse-position {
+  position: relative;
+}

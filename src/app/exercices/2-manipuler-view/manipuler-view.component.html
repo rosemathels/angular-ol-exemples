@@ -1,0 +1,12 @@
+<div class="side">
+  <p>Manipuler la View</p>
+  <button (click)="displayZoom()">Afficher le zoom</button>
+  <p>{{ currentZoom }}</p>
+  <button (click)="zoomPlus1()">Augmenter le zoom</button>
+  <button (click)="resetZoom()">Réinitialiser le zoom</button>
+  <button (click)="rotate45()">Rotation 45°</button>
+  <p>Animations</p>
+  <button (click)="animate()">Animate</button>
+  <button (click)="fit()">Fit</button>
+</div>
+<app-map class="map" [map]="map"></app-map>

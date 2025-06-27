@@ -1,0 +1,9 @@
+<div class="side">
+  <p>OpenLayers - Contrôles et interactions</p>
+  <button (click)="addZoomSlider()">Ajouter Zoom Slider</button>
+  <button (click)="removeZoomSlider()">Retirer Zoom Slider</button>
+  <div id="id-mouse-position"></div>
+  <button (click)="addDragRotateAndZoom()">Ajouter Drag Rotate and Zoom</button>
+  <button (click)="removeDragRotateAndZoom()">Retirer Drag Rotate and Zoom</button>
+</div>
+<app-map class="map" [map]="map"></app-map>

@@ -5,10 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
+    "@angular-builders/jest": "19",
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
@@ -16,6 +18,11 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "ol": "^10.7.0",
+    "ol-mapbox-style": "^13.1.1",
+    "ol-pmtiles": "^2.0.2",
+    "proj4": "^2.17.0",
+    "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -24,6 +31,10 @@
     "@angular-devkit/build-angular": "^19.2.13",
     "@angular/cli": "^19.2.13",
     "@angular/compiler-cli": "^19.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/proj4": "^2.5.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.0",
     "typescript": "~5.7.2"
   }
 }

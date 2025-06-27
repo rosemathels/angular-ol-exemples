@@ -1,0 +1,18 @@
+<div class="side">
+  <p>OpenLayers - Hello World</p>
+
+  @if (moving) {
+    <p>Déplacement en cours</p>
+  }
+</div>
+<app-map class="map" [map]="map"></app-map>
+
+<div class="popup">
+  @if (nomPays && airePays) {
+    <p>{{ nomPays }}</p>
+    <p>{{ airePays }} km²</p>
+  }
+  <p>{{ coordonnees }}</p>
+
+  <button (click)="closeOverlay()">Fermer</button>
+</div>

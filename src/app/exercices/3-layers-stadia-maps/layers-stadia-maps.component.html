@@ -1,0 +1,8 @@
+<div class="side">
+  <p>OpenLayers - Layer Stadia Maps</p>
+
+  <input type="radio" name="couche" [ngModel]="currentLayer" (ngModelChange)="selectLayer('watercolor')" [value]="'watercolor'" /> Watercolor
+  <input type="radio" name="couche" [ngModel]="currentLayer" (ngModelChange)="selectLayer('dark')" [value]="'dark'" /> Dark
+  <input type="radio" name="couche" [ngModel]="currentLayer" (ngModelChange)="selectLayer('toner')" [value]="'toner'" /> Toner
+</div>
+<app-map class="map" [map]="map"></app-map>

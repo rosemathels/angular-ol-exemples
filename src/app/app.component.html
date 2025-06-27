@@ -1,0 +1,62 @@
+<select class="selecteur" [(ngModel)]="exempleActif">
+  <option value="{{ Exemples.HELLO_WORLD }}">Hello World</option>
+  <option value="{{ Exemples.MANIPULER_VIEW }}">Manipuler la View</option>
+  <option value="{{ Exemples.LAYERS_STADIA_MAPS }}">Layers - Stadia Maps</option>
+  <option value="{{ Exemples.LAYERS_IGN }}">Layers - IGN</option>
+  <option value="{{ Exemples.VECTEUR_FEATURES }}">Couches vecteur - Features</option>
+  <option value="{{ Exemples.VECTEUR_GEOJSON }}">Couches vecteur - GeoJSON et KML</option>
+  <option value="{{ Exemples.STYLING_GEOJSON }}">Styles - GeoJSON et KML</option>
+  <option value="{{ Exemples.STYLING_BDTOPO }}">Styles - BD TOPO</option>
+  <option value="{{ Exemples.CONTROLS_INTERACTIONS }}">Contrôles et interactions</option>
+  <option value="{{ Exemples.MAP_EVENTS }}">Evènements de la carte</option>
+  <option value="{{ Exemples.DRAWING }}">Dessin</option>
+  <option value="{{ Exemples.VECTEUR_ASTUCES }}">Astuces vecteur</option>
+</select>
+
+@if (exempleActif === Exemples.HELLO_WORLD) {
+  <app-hello-world></app-hello-world>
+}
+
+@if (exempleActif === Exemples.MANIPULER_VIEW) {
+  <app-manipuler-view></app-manipuler-view>
+}
+
+@if (exempleActif === Exemples.LAYERS_STADIA_MAPS) {
+  <app-layers-stadia-maps></app-layers-stadia-maps>
+}
+
+@if (exempleActif === Exemples.LAYERS_IGN) {
+  <app-layers-ign></app-layers-ign>
+}
+
+@if (exempleActif === Exemples.VECTEUR_GEOJSON) {
+  <app-vecteur-geojson></app-vecteur-geojson>
+}
+
+@if (exempleActif === Exemples.VECTEUR_FEATURES) {
+  <app-vecteur-features></app-vecteur-features>
+}
+
+@if (exempleActif === Exemples.STYLING_GEOJSON) {
+  <app-styling-geojson></app-styling-geojson>
+}
+
+@if (exempleActif === Exemples.STYLING_BDTOPO) {
+  <app-styling-bdtopo></app-styling-bdtopo>
+}
+
+@if (exempleActif === Exemples.CONTROLS_INTERACTIONS) {
+  <app-controls-interactions></app-controls-interactions>
+}
+
+@if (exempleActif === Exemples.MAP_EVENTS) {
+  <app-map-events></app-map-events>
+}
+
+@if (exempleActif === Exemples.DRAWING) {
+  <app-drawing></app-drawing>
+}
+
+@if (exempleActif === Exemples.VECTEUR_ASTUCES) {
+  <app-vecteur-astuces></app-vecteur-astuces>
+}
